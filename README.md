@@ -34,3 +34,10 @@ Using HTML, CSS and Javascript, you will be creating a single player version of 
 * Track player's highest score *(until they refresh? maybe create a login as another bonus?)*
 * Use spacebar to pause/play the game
 
+## My Trello Board
+
+
+## Credits 
+* [Requirement Inspiration](https://www.educative.io/blog/javascript-snake-game-tutorial)
+* [ReadMe Inspiration](https://github.com/SEI-R-11-8/u1_hw_tic_tac_toe)
+
