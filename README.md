@@ -35,9 +35,9 @@ Using HTML, CSS and Javascript, you will be creating a single player version of 
 * Use spacebar to pause/play the game
 
 ## My Trello Board
-
+* https://trello.com/b/grAllfS2/stealthy-snake
 
 ## Credits 
 * [Requirement Inspiration](https://www.educative.io/blog/javascript-snake-game-tutorial)
-* [ReadMe Inspiration](https://github.com/SEI-R-11-8/u1_hw_tic_tac_toe)
+* [ReadMe Inspiration/Verbiage](https://github.com/SEI-R-11-8/u1_hw_tic_tac_toe)
 
