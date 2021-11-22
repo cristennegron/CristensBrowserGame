@@ -65,7 +65,6 @@ if(squares[currentSnake[0]].classList.contains('apple')) {
   }
 
 function control(event) {
-    squares[currentIndex].classList.remove('snake')
 
     if(event.code === 'ArrowRight') {
       direction = 1 
