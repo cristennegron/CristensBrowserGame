@@ -63,3 +63,4 @@ if(squares[currentSnake[0]].classList.contains('apple')) {
     } while(squares[appleIndex].classList.contains('snake')) 
     squares[appleIndex].classList.add('apple')
   }
+  
