@@ -1,6 +1,6 @@
 const squares = document.querySelectorAll('.board div')
 const scoreDisplay = document.querySelector('span')
-const startBtn = document.querySelector('.start')
+const board = document.querySelector('.board')
 
 const width = 20
 let currentIndex = 0 
@@ -84,5 +84,4 @@ function control(event) {
   }
 
   document.addEventListener('keyup', control)
-  startBtn.addEventListener('click', startGame)
-
+  board.addEventListener('click', startGame)
