@@ -1,15 +1,16 @@
 body {
-    font-family:'Montserrat', sans-serif;
-    background-color: black;
+    font-family:'Press Start 2P', cursive;
+    background-color: 	#afc77a;
 }
+
 .board {
     width: 400px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: #a4e2a4;
     margin: 0 auto;
-    box-shadow: 5px 5px 20px #888888;
+    box-shadow: 2px 2px 10px #2e371b;
+    border-style: solid;
 }
 
 .board div {
@@ -19,34 +20,31 @@ body {
 
 h1 {
     text-align: center;
-    margin: 25px 0px 50px 0px;
-    font-size: 50px;
-    font-family: "Warnes", cursive;
+    margin: 50px 0px 70px 0px;
+    font-size: 45px;
     font-weight: 400;
-    color: #fff;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px rgb(5, 110, 5),
-      0 0 82px rgb(5, 110, 5),
-      0 0 92px rgb(5, 110, 5),
-      0 0 102px rgb(5, 110, 5),
-      0 0 151px rgb(5, 110, 5);
-    font-style: italic;
+    color:  #2e371b;
+    text-shadow: 1px 1px 5px #2e371b;
 
 }
 
 .score {
     text-align: center;
     margin-top: 25px;
+    color: #2e371b;
+    padding: 40px;
+    font-size: 25px;
+    font-style: bold;
+    text-shadow: 1px 1px 5px #2e371b;
 }
 
 .snake {
-    background-color: #84b55f;
+    background-color: 	#2e371b;
+    box-shadow: 1px 1px 5px #2e371b;
 }
 
 .apple {
-    background-color: #EB5555;
+    background-color: 	#2e371b;
     border-radius: 20px;
+    box-shadow: 1px 1px 5px #2e371b;    
 }

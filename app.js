@@ -20,7 +20,7 @@ function startGame() {
     randomApple()
     direction = 1
     scoreDisplay.innerText = score
-    intervalTime = 400
+    intervalTime = 200
     snakePosition = [2,1,0]
     currentIndex = 0
     snakePosition.forEach(index => squares[index].classList.add('snake'))
