@@ -1,16 +1,27 @@
+body {
+    font-family:'Montserrat', sans-serif;
+}
 .board {
     width: 400px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
     border-style: solid;
-    background-color: grey;
+    background-color: #DDD8D8;
     margin: 0 auto;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.board div {
+    width: 20px;
+    height: 20px;
 }
 
 h1 {
     text-align: center;
     margin: 25px 0px 50px 0px;
+    font-size: 40px;
+    text-shadow:  5px 10px 18px #84b55f;
 }
 
 .score {
@@ -25,17 +36,11 @@ h1 {
     margin-top: 25px;
 }
 
-.board div {
-    width: 40px;
-    height: 40px;
-}
-
 .snake {
-    background-color: lime;
-    border-radius: 30px;
+    background-color: #84b55f;
 }
 
 .apple {
-    background-color: red;
-    border-radius: 30px;
+    background-color: #EB5555;
+    border-radius: 20px;
 }
