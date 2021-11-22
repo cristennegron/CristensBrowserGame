@@ -56,3 +56,10 @@ if(squares[currentSnake[0]].classList.contains('apple')) {
   }
   squares[currentSnake[0]].classList.add('snake')
   }
+
+  function randomApple() {
+    do{
+      appleIndex = Math.floor(Math.random() * squares.length)
+    } while(squares[appleIndex].classList.contains('snake')) 
+    squares[appleIndex].classList.add('apple')
+  }
