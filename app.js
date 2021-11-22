@@ -27,7 +27,7 @@ function startGame() {
     interval = setInterval(moveOutcomes, intervalTime)
   }
 
-  function moveOutcomes() {
+function moveOutcomes() {
     if (
       (currentSnake[0] + width >= (width * width) && direction === width ) || 
       (currentSnake[0] % width === width -1 && direction === 1) || 
@@ -63,6 +63,21 @@ if(squares[currentSnake[0]].classList.contains('apple')) {
     } while(squares[appleIndex].classList.contains('snake')) 
     squares[appleIndex].classList.add('apple')
   }
+
+function control(event) {
+    squares[currentIndex].classList.remove('snake')
+
+    if(event.code === 'ArrowRight') {
+      direction = 1 
+    } else if (event.code === 'ArrowUp') {
+      direction = -width 
+    } else if (event.code === 'ArrowLeft') {
+      direction = -1 
+    } else if (event.code === 'ArrowDown') {
+      direction = +width 
+    }
+  }
+  
   document.addEventListener('keyup', control)
   startBtn.addEventListener('click', startGame)
 
