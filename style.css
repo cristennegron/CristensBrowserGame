@@ -5,6 +5,23 @@
     flex-wrap: wrap;
     border-style: solid;
     background-color: grey;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.score {
+    text-align: center;
+}
+
+.start {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+    padding: 15px 32px;
+
 }
 
 .board div {
