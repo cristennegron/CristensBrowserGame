@@ -13,25 +13,24 @@ let intervalTime = 0
 let interval = 0
 
 function startGame() {
-    board.classList.remove('start')
-    board.classList.remove('end')
-    snakePosition.forEach(index => squares[index].classList.remove('snake'))
-    squares[appleIndex].classList.remove('apple')
-    clearInterval(interval)
-    score = 0
-    randomApple()
-    direction = 1
-    scoreDisplay.innerText = score
-    intervalTime = 200
-    snakePosition = [2,1,0]
-    currentIndex = 0
-    snakePosition.forEach(index => squares[index].classList.add('snake'))
-    interval = setInterval(moveOutcomes, intervalTime) 
-  }
- 
+  board.classList.remove('start')
+  board.classList.remove('end')
+  snakePosition.forEach(index => squares[index].classList.remove('snake'))
+  squares[appleIndex].classList.remove('apple')
+  clearInterval(interval)
+  score = 0
+  scoreDisplay.innerText = score
+  randomApple()
+  direction = 1
+  intervalTime = 200
+  snakePosition = [2,1,0]
+  currentIndex = 0
+  snakePosition.forEach(index => squares[index].classList.add('snake'))
+  interval = setInterval(moveOutcomes, intervalTime) 
+}
 
 function moveOutcomes() {
-    if (
+  if(
       (snakePosition[0] + width >= (width * width) && direction === width) || 
       (snakePosition[0] % width === width -1 && direction === 1) || 
       (snakePosition[0] % width === 0 && direction === -1) || 
@@ -42,10 +41,9 @@ function moveOutcomes() {
         return clearInterval(interval) 
     }
 
-    const tail = snakePosition.pop() 
-    squares[tail].classList.remove('snake')  
-    snakePosition.unshift(snakePosition[0] + direction)
-
+  const tail = snakePosition.pop() 
+  squares[tail].classList.remove('snake')  
+  snakePosition.unshift(snakePosition[0] + direction)
 
 if(squares[snakePosition[0]].classList.contains('apple')) {
     squares[snakePosition[0]].classList.remove('apple')
@@ -69,31 +67,31 @@ function randomApple() {
   }
 
 function control(event) {
-  
   if(event.code === 'ArrowRight') {
     if (direction === -1){
     } else {
     direction = 1
     }
       
-    } else if (event.code === 'ArrowUp') {
-      if (direction === width){
-      } else {
-      direction = -width 
-      }
+  } else if (event.code === 'ArrowUp') {
+    if (direction === width){
+    } else {
+    direction = -width 
+    }
 
-    } else if (event.code === 'ArrowLeft') {
-     if (direction === 1){
-     } else {
-      direction = -1
-     }
+  } else if (event.code === 'ArrowLeft') {
+    if (direction === 1){
+    } else {
+    direction = -1
+    }
       
-    } else if (event.code === 'ArrowDown') {
-      if (direction === -width){
-      } else {
-      direction = width 
+  } else if (event.code === 'ArrowDown') {
+    if (direction === -width){
+    } else {
+    direction = width 
     }
   }
 }
-  document.addEventListener('keyup', control)
-  board.addEventListener('click', startGame)
+
+document.addEventListener('keyup', control)
+board.addEventListener('click', startGame)
