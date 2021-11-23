@@ -1,4 +1,4 @@
-#Snake Game
+##Snake Game
 
 ![Image](https://c.tenor.com/nSGiQJHgbjkAAAAd/nokia-snake-game.gif)
 
