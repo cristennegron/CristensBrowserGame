@@ -12,7 +12,7 @@ Using HTML, CSS and Javascript, you will be creating a single player version of 
 
 
 ## What You'll Be Building
-https://stealthysnake.surge.sh/
+[Example Here](https://stealthysnake.surge.sh/)
 
 ## Getting Started
 * Fork and clone this repository.
