@@ -1,7 +1,6 @@
 const squares = document.querySelectorAll('.board div')
 const scoreDisplay = document.querySelector('span')
 const board = document.querySelector('.board')
-const gameOver = document.querySelector('.gameOver')
 
 const width = 20
 let currentIndex = 0 
