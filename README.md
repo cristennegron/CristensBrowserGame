@@ -1,14 +1,14 @@
-# Stealthy Snake Game
+#Snake Game
 
 ![Image](https://c.tenor.com/nSGiQJHgbjkAAAAd/nokia-snake-game.gif)
 
 ## Overview
-Using HTML, CSS and Javascript, you will be creating a single player version of the Snake game. The player will use their arrow keys to move a "snake" around to try and "eat" an apple. Each time the snake eats an apple, the snake grows in length. When the snake runs into a wall or itself as it grows larger while trying to eat an apple, the player loses and it's game over. 
+Using HTML, CSS and Javascript, you will be creating a single player version of the Snake game. The player will use their arrow keys to move the snake around to try and eat as many apples as they can. Each time the snake eats an apple, the snake grows in length. When the snake runs into a wall or itself as it grows larger while trying to eat an apple, the player loses and it's game over. 
 
 ## Objectives
-* Boggle your mind building a 'Snake Game' from scratch using only  HTML, CSS, and vanilla JavaScript
+* Build your own Snake game from scratch using only HTML, CSS, and vanilla JavaScript
 * Have your code be as DRY (Don't Repeat Yourself) as possible
-* Create something you'd be proud to showcase in your portfolio!
+* Be sure to style and create something you'd be proud to showcase in your portfolio
 
 
 ## What You'll Be Building
@@ -31,7 +31,7 @@ Using HTML, CSS and Javascript, you will be creating a single player version of 
 
 ## Bonuses
 * Keep a score count 
-* Track player's highest score *(until they refresh? maybe create a login as another bonus?)*
+* Track player's highest score 
 * Use spacebar to pause/play the game
 
 ## My Trello Board
@@ -40,4 +40,5 @@ Using HTML, CSS and Javascript, you will be creating a single player version of 
 ## Credits 
 * [Requirement Inspiration](https://www.educative.io/blog/javascript-snake-game-tutorial)
 * [ReadMe Inspiration/Verbiage](https://github.com/SEI-R-11-8/u1_hw_tic_tac_toe)
+
 
