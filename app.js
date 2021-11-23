@@ -1,6 +1,7 @@
 const squares = document.querySelectorAll('.board div')
 const scoreDisplay = document.querySelector('span')
 const board = document.querySelector('.board')
+const gameOver = document.querySelector('.gameOver')
 
 const width = 20
 let currentIndex = 0 
@@ -13,6 +14,8 @@ let intervalTime = 0
 let interval = 0
 
 function startGame() {
+    board.classList.remove('start')
+    board.classList.remove('end')
     snakePosition.forEach(index => squares[index].classList.remove('snake'))
     squares[appleIndex].classList.remove('apple')
     clearInterval(interval)
@@ -24,8 +27,9 @@ function startGame() {
     snakePosition = [2,1,0]
     currentIndex = 0
     snakePosition.forEach(index => squares[index].classList.add('snake'))
-    interval = setInterval(moveOutcomes, intervalTime)
+    interval = setInterval(moveOutcomes, intervalTime) 
   }
+ 
 
 function moveOutcomes() {
     if (
@@ -35,6 +39,7 @@ function moveOutcomes() {
       (snakePosition[0] - width < 0 && direction === -width) ||  
       squares[snakePosition[0] + direction].classList.contains('snake') 
     ) {
+        board.classList.add('end')
         return clearInterval(interval) 
     }
 
@@ -60,28 +65,36 @@ if(squares[snakePosition[0]].classList.contains('apple')) {
 function randomApple() {
     do{
       appleIndex = Math.floor(Math.random() * squares.length)
-    } while(squares[appleIndex].classList.contains('snake')) 
+    } while((squares[appleIndex].classList.contains('snake') && appleIndex > 3))
     squares[appleIndex].classList.add('apple')
   }
-
-const headPosition = snakePosition[0];
-const snakeHead = squares[headPosition];
 
 function control(event) {
   
   if(event.code === 'ArrowRight') {
-      direction = 1
+    if (direction === -1){
+    } else {
+    direction = 1
+    }
       
     } else if (event.code === 'ArrowUp') {
+      if (direction === +width){
+      } else {
       direction = -width 
-      
+      }
+
     } else if (event.code === 'ArrowLeft') {
+     if (direction === 1){
+     } else {
       direction = -1
+     }
       
     } else if (event.code === 'ArrowDown') {
+      if (direction === -width){
+      } else {
       direction = +width 
     }
   }
-
+}
   document.addEventListener('keyup', control)
   board.addEventListener('click', startGame)
