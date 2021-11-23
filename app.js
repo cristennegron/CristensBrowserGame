@@ -1,7 +1,6 @@
 const squares = document.querySelectorAll('.board div')
 const scoreDisplay = document.querySelector('span')
 const board = document.querySelector('.board')
-
 const width = 20
 let currentIndex = 0 
 let appleIndex = 0 
@@ -66,32 +65,32 @@ function randomApple() {
     squares[appleIndex].classList.add('apple')
   }
 
-function control(event) {
-  if(event.code === 'ArrowRight') {
-    if (direction === -1){
-    } else {
-    direction = 1
-    }
-      
-  } else if (event.code === 'ArrowUp') {
-    if (direction === width){
-    } else {
-    direction = -width 
-    }
-
-  } else if (event.code === 'ArrowLeft') {
-    if (direction === 1){
-    } else {
-    direction = -1
-    }
-      
-  } else if (event.code === 'ArrowDown') {
-    if (direction === -width){
-    } else {
-    direction = width 
+  function control(event) {
+    if(event.code === 'ArrowRight') {
+      if (direction === -1){
+      } else {
+      direction = 1
+      }
+        
+    } else if (event.code === 'ArrowUp') {
+      if (direction === width){
+      } else {
+      direction = -width 
+      }
+  
+    } else if (event.code === 'ArrowLeft') {
+      if (direction === 1){
+      } else {
+      direction = -1
+      }
+        
+    } else if (event.code === 'ArrowDown') {
+      if (direction === -width){
+      } else {
+      direction = width 
+      }
     }
   }
-}
 
 document.addEventListener('keyup', control)
 board.addEventListener('click', startGame)
