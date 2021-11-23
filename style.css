@@ -6,7 +6,7 @@ body{
 .start:before {
     position: fixed;
     content: "Start Game";
-    top:55%;
+    top:45%;
     left:50%;
     transform:translate(-50%,-50%);
     text-align:center;
@@ -18,7 +18,7 @@ body{
 .end:before {
     position: fixed;
     content: "Click to Restart";
-    top:55%;
+    top:45%;
     left:50%;
     transform:translate(-50%,-50%);
     text-align:center;
