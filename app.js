@@ -77,7 +77,7 @@ function control(event) {
     }
       
     } else if (event.code === 'ArrowUp') {
-      if (direction === +width){
+      if (direction === width){
       } else {
       direction = -width 
       }
@@ -91,7 +91,7 @@ function control(event) {
     } else if (event.code === 'ArrowDown') {
       if (direction === -width){
       } else {
-      direction = +width 
+      direction = width 
     }
   }
 }
