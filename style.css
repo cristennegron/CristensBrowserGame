@@ -1,13 +1,16 @@
 body{
-    font-family:'Press Start 2P', cursive;
+    font-family:'Press Start 2P';
     background-color:#2e371b;
 }
 
 .start:before {
-    position: fixed;
+    font-family:'Press Start 2P';
+
+    position: relative;
     content: "Start Game";
-    top:45%;
-    left:50%;
+    justify-content: center;
+    top:200px;
+    left:200px;
     transform:translate(-50%,-50%);
     text-align:center;
     font-size: 20px;
@@ -16,10 +19,11 @@ body{
 }
 
 .end:before {
-    position: fixed;
+    position: relative;
     content: "Click to Restart";
-    top:45%;
-    left:50%;
+    justify-content: center;
+    top:200px;
+    left:200px;
     transform:translate(-50%,-50%);
     text-align:center;
     color: rgb(233, 220, 198);
@@ -30,6 +34,8 @@ body{
     width: 400px;
     height: 400px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
     box-shadow: 2px 2px 10px black;
